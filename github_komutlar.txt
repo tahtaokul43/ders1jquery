@@ -1,0 +1,11 @@
+#github reposu oluştuktan sonra ilk kez yükleme
+git init (local klasörde oluşuyor)
+git add. (mevcut bütün dosyaları repostry e ekliyor)
+git commit -m "jQery giriş"
+git remote add origin (bağlantı adresini git den alma)
+git push -u origin master
+
+#sonraki yaptığımız değişiklikleri gönderirken
+git add .
+git commit -m "değişikliği anlatan kısa bir ifade"
+git push 
