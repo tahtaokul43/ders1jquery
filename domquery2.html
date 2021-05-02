@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"  , initial-scale=1.0">
+    <title>Dom vs jQuey</title>
+</head>
+<body>
+    <p>deneme yanılma </p>   
+    <p>yanılıp öğrenme </p>
+    <p>sokağa çıkma </p> 
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        //yukarıdaki ilk paragrafın dom nesnesine erişiyoruz.
+        //var parag = document.querySelector("p")
+       // parag.style.color = "red"; //renk stilini değiştirir
+       //mevcut dom nesnesini etkinleştirme 
+       
+       $("p").css("color", "red");
+      
+       $("p").last().css("color", "black");
+        // jquery nesnesinden dom elementine erişme
+        var p=$("p")[0]; // saf dom elementi
+        p.style.backgroundColor = "green"; //saf js ile renk değiştirme
+  </script>
+
+
+</body>
+</html>
